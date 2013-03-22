@@ -4,11 +4,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Michael MAtyus -- Developer & Designer -- @mmatyus
 
 # THANKS
 
-    <name>
+    Everyone I follow on twitter
 
 # TECHNOLOGY COLOPHON
 
