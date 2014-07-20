@@ -1,0 +1,103 @@
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgb(70, 106, 154) 11%, rgb(64, 161, 226) 41%, rgb(217, 214, 209) 57%);
+  color: white;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+header,
+article {
+  padding: 0 1em;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+    padding-right: 0.5em;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid white;
+
+    &:link,
+    &:visited{
+      color: white;
+    }
+    &:active {
+      color: rgb(70, 106, 154);
+    }
+  }
+}
+
+.ocean {
+  background-color: blue;
+  height: 50%;
+  position: absolute;
+  user-select: none;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+@keyframes tide {
+  0%,100% {
+    transform: translate3d(0,5%,0);
+  }
+
+  50% {
+    transform: translate3d(0,0%,0);
+  }
+}
+
+.tide {
+  background-color: blue;
+  background-image: linear-gradient(to bottom, rgb(95, 191, 255) 20%, rgb(9, 129, 209) 85%);
+  animation:tide ease-in-out 5s infinite;
+}
+
+.boat {
+
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  top: -22px;
+  width: 20px;
+
+  &:before {
+    content: "\0020";
+    background-color: transparent;
+    background-image: url("../images/boat.gif");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 25px;
+    width: 28px;
+  }
+}

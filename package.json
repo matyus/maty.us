@@ -1,0 +1,27 @@
+{
+  "name": "matyus",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.3"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^0.8.2",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matyus/maty.us.git"
+  },
+  "author": "michael matyus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matyus/maty.us/issues"
+  },
+  "homepage": "https://github.com/matyus/maty.us"
+}
