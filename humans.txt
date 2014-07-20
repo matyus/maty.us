@@ -4,11 +4,14 @@
 
 # TEAM
 
-    Michael MAtyus -- Developer & Designer -- @mmatyus
+    Michael Matyus -- @mmatyus
 
 # THANKS
 
     Everyone I follow on twitter
+
+    Also, I got the boat gif from here:
+    http://www.netanimations.net/Boats-ships-canoes-rowing-Animations.htm
 
 # TECHNOLOGY COLOPHON
 
