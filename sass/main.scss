@@ -25,6 +25,28 @@ body {
   font-family: 'Helvetica Neue',sans-serif;
   font-size: 12px;
   overflow: hidden;
+
+  &.day {
+    background-image: linear-gradient(to bottom, #7EB5FF 14%, #DCEEF7 40%, #F7E1BD 40%);
+
+    article {
+      position: relative;
+      top: 40%;
+    }
+
+    button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+  &.night {
+    background-image: linear-gradient(to bottom, #24143F 14%, #1F0780 40%, #422102 40%);
+
+    .teeth {
+      opacity:0.7;
+    }
+  }
 }
 
 header,
@@ -84,7 +106,6 @@ nav {
 }
 
 .boat {
-
   display: inline-block;
   height: 20px;
   position: relative;
@@ -100,4 +121,22 @@ nav {
     height: 25px;
     width: 28px;
   }
+}
+
+@keyframes walk {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+.walk {
+  margin-left: -30px;
+  margin-top: -30px;
+  animation:walk linear 90s infinite;
+  position: absolute;
+  width: 100%;
 }

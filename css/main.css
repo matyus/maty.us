@@ -27,6 +27,28 @@ body {
   font-size: 12px;
   overflow: hidden;
 }
+body.day {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #7eb5ff), color-stop(40%, #dceef7), color-stop(40%, #f7e1bd));
+  background-image: -webkit-linear-gradient(top, #7eb5ff 14%, #dceef7 40%, #f7e1bd 40%);
+  background-image: linear-gradient(to bottom, #7eb5ff 14%, #dceef7 40%, #f7e1bd 40%);
+}
+body.day article {
+  position: relative;
+  top: 40%;
+}
+body.day button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+body.night {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(14%, #24143f), color-stop(40%, #1f0780), color-stop(40%, #422102));
+  background-image: -webkit-linear-gradient(top, #24143f 14%, #1f0780 40%, #422102 40%);
+  background-image: linear-gradient(to bottom, #24143f 14%, #1f0780 40%, #422102 40%);
+}
+body.night .teeth {
+  opacity: 0.7;
+}
 
 header,
 article {
@@ -88,7 +110,6 @@ nav a:active {
             transform: translate3d(0, 0%, 0);
   }
 }
-
 .tide {
   background-color: blue;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #5fbfff), color-stop(85%, #0981d1));
@@ -113,4 +134,32 @@ nav a:active {
   display: inline-block;
   height: 25px;
   width: 28px;
+}
+
+@-webkit-keyframes walk {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes walk {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+.walk {
+  margin-left: -30px;
+  margin-top: -30px;
+  -webkit-animation: walk linear 90s infinite;
+          animation: walk linear 90s infinite;
+  position: absolute;
+  width: 100%;
 }
