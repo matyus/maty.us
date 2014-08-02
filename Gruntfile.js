@@ -5,19 +5,21 @@ module.exports = function(grunt){
         options: {
           style: 'expanded'
         },
-        files: {
-          'css/main.css': 'sass/main.scss'
-        }
+        files: [
+          {'css/teeth_main.css': 'sass/teeth_main.scss'},
+          {'css/bird_main.css': 'sass/bird_main.scss'},
+          {'css/boat_main.css': 'sass/boat_main.scss'}
+        ]
       }
     },
     autoprefixer: {
       no_dest: {
-        src: 'css/main.css'
+        src: ['css/boat_main.css','css/teeth_main.css']
       }
     },
     watch: {
       css: {
-        files: 'sass/*.scss',
+        files: 'sass/**/**.scss',
         tasks: ['sass','autoprefixer']
       }
     }
