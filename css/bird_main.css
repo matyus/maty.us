@@ -15,7 +15,11 @@ body article {
 }
 
 .frame {
-  margin: 100px auto 0;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
   width: 200px;
 }
 
@@ -31,7 +35,7 @@ body article {
 
   50% {
     margin-left: 3%;
-    margin-top: 5px;
+    margin-top: 0;
   }
 }
 
@@ -43,11 +47,12 @@ body article {
 
   50% {
     margin-left: 3%;
-    margin-top: 5px;
+    margin-top: 0;
   }
 }
+
 .hover {
-  margin-top: 5px;
+  margin-top: 0;
   -webkit-animation: hover linear 2s infinite;
           animation: hover linear 2s infinite;
 }
