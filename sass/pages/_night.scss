@@ -1,0 +1,54 @@
+body {
+  background-image: linear-gradient(to bottom, rgb(28, 0, 65) 61%, rgb(3, 77, 119) 90%, rgb(0, 0, 0) 100%);;
+
+
+  header,
+  article {
+    padding: 0;
+  }
+}
+
+.fire {
+  background-color: rgb(75, 38, 4);
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.star {
+  position: absolute;
+}
+
+.star--spark {
+  @extend .star;
+
+  margin: 100px;
+}
+
+.star--flickering {
+  @extend .star;
+
+  bottom: 0;
+  margin: 200px 100px;
+}
+
+.star--shooting {
+  @extend .star;
+
+  right: 10px;
+  margin: 100px;
+}
+
+.star--pulsar {
+  @extend .star;
+
+  margin: 134px 50%;
+}
+
+.star--white_pulsar {
+  @extend .star;
+
+  bottom: 35%;
+  right: 10%;
+}

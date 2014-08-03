@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(61%, #1c0041), color-stop(90%, #034d77), to(black));
+  background-image: -webkit-linear-gradient(top, #1c0041 61%, #034d77 90%, black 100%);
+  background-image: linear-gradient(to bottom, #1c0041 61%, #034d77 90%, black 100%);
+}
+body header,
+body article {
+  padding: 0;
+}
+
+.fire {
+  background-color: #4b2604;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.star, .star--spark, .star--flickering, .star--shooting, .star--pulsar, .star--white_pulsar {
+  position: absolute;
+}
+
+.star--spark {
+  margin: 100px;
+}
+
+.star--flickering {
+  bottom: 0;
+  margin: 200px 100px;
+}
+
+.star--shooting {
+  right: 10px;
+  margin: 100px;
+}
+
+.star--pulsar {
+  margin: 134px 50%;
+}
+
+.star--white_pulsar {
+  bottom: 35%;
+  right: 10%;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
