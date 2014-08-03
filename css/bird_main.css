@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue',sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+}
+body header,
+body article {
+  padding: 0 1em;
+}
+
+.frame {
+  margin: 100px auto 0;
+  width: 200px;
+}
+
+.dove {
+  vertical-align: top;
+}
+
+@-webkit-keyframes hover {
+  0%,100% {
+    margin-left: 0;
+    margin-top: 2px;
+  }
+
+  50% {
+    margin-left: 3%;
+    margin-top: 5px;
+  }
+}
+
+@keyframes hover {
+  0%,100% {
+    margin-left: 0;
+    margin-top: 2px;
+  }
+
+  50% {
+    margin-left: 3%;
+    margin-top: 5px;
+  }
+}
+.hover {
+  margin-top: 5px;
+  -webkit-animation: hover linear 2s infinite;
+          animation: hover linear 2s infinite;
+}
+
+.fan {
+  float: right;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

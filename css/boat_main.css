@@ -74,7 +74,6 @@ nav a:active {
             transform: translate3d(0, 0%, 0);
   }
 }
-
 .tide {
   background-color: blue;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #5fbfff), color-stop(85%, #0981d1));

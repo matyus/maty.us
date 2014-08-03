@@ -14,7 +14,7 @@ module.exports = function(grunt){
     },
     autoprefixer: {
       no_dest: {
-        src: ['css/boat_main.css','css/teeth_main.css']
+        src: ['css/boat_main.css','css/teeth_main.css','css/bird_main.css']
       }
     },
     watch: {

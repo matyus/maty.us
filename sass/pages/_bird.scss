@@ -1,5 +1,4 @@
 body {
-  color: white;
   font-family: 'Helvetica Neue',sans-serif;
   font-size: 12px;
   overflow: hidden;
@@ -8,4 +7,34 @@ body {
   article {
     padding: 0 1em;
   }
+}
 
+.frame {
+  margin: 100px auto 0 ;
+  width: 200px;
+}
+
+.dove {
+  vertical-align: top;
+}
+
+@keyframes hover {
+  0%,100% {
+    margin-left: 0;
+    margin-top: 2px;
+  }
+
+  50% {
+    margin-left: 3%;
+    margin-top:5px;
+  }
+}
+
+.hover {
+  margin-top: 5px;
+  animation:hover linear 2s infinite;
+}
+
+.fan {
+  float: right;
+}
