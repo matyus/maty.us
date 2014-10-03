@@ -1,0 +1,32 @@
+body {
+  color: white;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+
+  header,
+  article {
+    padding: 0 1em;
+  }
+
+  background-image: linear-gradient(to bottom, #7EB5FF 14%, #DCEEF7 40%, #F7E1BD 40%);
+
+}
+
+@keyframes walk {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+.walk {
+  margin-left: -30px;
+  margin-top: -30px;
+  animation:walk linear 90s infinite;
+  position: absolute;
+  width: 100%;
+}
