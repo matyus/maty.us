@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+}
+body header,
+body article {
+  padding: 0 1em;
+}
+body article {
+  bottom: 0;
+  left: 0;
+  text-align: right;
+  position: absolute;
+  width: 100%;
+}
+body * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#flower_bed {
+  display: inline-block;
+  height: 500px;
+  outline: 1px dotted red;
+  position: relative;
+  width: 900px;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

@@ -8,6 +8,7 @@ module.exports = function(grunt){
         files: [
           {'css/teeth_main.css': 'sass/teeth_main.scss'},
           {'css/flag_main.css': 'sass/flag_main.scss'},
+          {'css/flowers_main.css': 'sass/flowers_main.scss'},
           {'css/bird_main.css': 'sass/bird_main.scss'},
           {'css/night_main.css': 'sass/night_main.scss'},
           {'css/boat_main.css': 'sass/boat_main.scss'}
@@ -20,6 +21,7 @@ module.exports = function(grunt){
           'css/boat_main.css',
           'css/teeth_main.css',
           'css/flag_main.css',
+          'css/flowers_main.css',
           'css/bird_main.css',
           'css/night_main.css'
         ]

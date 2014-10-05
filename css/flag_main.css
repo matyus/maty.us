@@ -1,21 +1,25 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   color: white;
   font-family: 'Helvetica Neue',sans-serif;
   font-size: 12px;
   overflow: hidden;
-
-  header,
-  article {
-    padding: 0 1em;
-  }
-
-  article {
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-  }
+}
+body header,
+body article {
+  padding: 0 1em;
+}
+body article {
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
 }
 
 #pole {
@@ -23,7 +27,8 @@ body {
   background-image: url("../images/half mast/121_2196.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   display: inline-block;
   height: 300px;
   position: relative;
@@ -35,7 +40,8 @@ body {
   background-image: url("../images/half mast/mini-graphics-money-406096.gif");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   display: inline-block;
   height: 0;
   margin-left: -2%;
@@ -43,4 +49,18 @@ body {
   position: absolute;
   top: 40%;
   width: 50%;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
