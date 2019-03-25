@@ -10,10 +10,21 @@
   </head>
   <body>
     <a href="#main-content" class="visuallyhidden focusable" id="skip-to-content">Skip to content</a>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="{% if page.url == '/books/' %}#main-content{% else %}/books/{% endif %}">Books</a>
+      </nav>
+    </header>
 
     <main id="main-content" class="{{ page.category }}">
       {{ content }}
     </main>
+
+    <footer>
+      <a href="#main-content">Back to top</a>
+      <time datetime="{{ page.last_modified_at }}">Last edited {{ page.last_modified_at | date_to_long_string: "ordinal" }}</time>
+    </footer>
 
     <script>
       var _gaq=[['_setAccount','UA-23920757-1'],['_trackPageview']];

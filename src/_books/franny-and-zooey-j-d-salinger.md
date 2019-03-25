@@ -1,5 +1,5 @@
 ---
-title: Franny and Zooey by J.D. Salinger
+title: Annotations for Franny and Zooey by J.D. Salinger
 layout: default
 categories: ['fuz', 'baq']
 tags: ['foo', 'bar']
@@ -9,6 +9,8 @@ tags: ['foo', 'bar']
 # Annotations for Franny and Zooey by J.D. Salinger
 
 This is not the complete text. Below are select excerpts from _Franny and Zooey_ with accompanying footnotes.
+
+---
 
 ## Epigram
 

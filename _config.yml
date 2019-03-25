@@ -14,3 +14,4 @@ feed:
 plugins:
   - jekyll-gzip
   - jekyll-assets
+  - jekyll-last-modified-at

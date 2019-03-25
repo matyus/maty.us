@@ -2,9 +2,15 @@
 
 body {
   background: #fff;
-  color: #222;
-  font-family: Courier New, Courier, monospace;
+  box-sizing: border-box;
+  color: #333;
+  line-height: 1.4;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   font-size: 21px;
+
+  * {
+    box-sizing: inherit;
+  }
 }
 
 h1,
@@ -16,9 +22,22 @@ h6 {
   font-size: inherit;
 }
 
+footer,
+header,
 main {
-  margin: auto;
-  width: 50em;
+  margin: 1em auto;
+  max-width: 1000px;
+  padding: 10px;
+}
+
+footer,
+header {
+  font-size: 16px;
+}
+
+footer time {
+  color: #aaa;
+  float: right;
 }
 
 blockquote {
@@ -48,7 +67,7 @@ blockquote {
     font-weight: bold;
     height: 0;
     padding-top: 0.5em;
-    width: 500px;
+    width: 61.8%;
   }
 }
 

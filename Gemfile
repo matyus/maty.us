@@ -10,4 +10,5 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-gzip'
   gem 'jekyll-assets'
+  gem 'jekyll-last-modified-at'
 end
