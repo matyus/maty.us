@@ -1,0 +1,104 @@
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(11%, #466a9a), color-stop(41%, #40a1e2), color-stop(57%, #d9d6d1));
+  background-image: -webkit-linear-gradient(top, #466a9a 11%, #40a1e2 41%, #d9d6d1 57%);
+  background-image: linear-gradient(to bottom, #466a9a 11%, #40a1e2 41%, #d9d6d1 57%);
+  color: white;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+header,
+article {
+  padding: 0 1em;
+}
+
+.ocean {
+  background-color: blue;
+  height: 50%;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+@-webkit-keyframes tide {
+  0%,100% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+  }
+}
+
+@keyframes tide {
+  0%,100% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0%, 0);
+            transform: translate3d(0, 0%, 0);
+  }
+}
+
+.tide {
+  background-color: blue;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #5fbfff), color-stop(85%, #0981d1));
+  background-image: -webkit-linear-gradient(top, #5fbfff 20%, #0981d1 85%);
+  background-image: linear-gradient(to bottom, #5fbfff 20%, #0981d1 85%);
+  -webkit-animation: tide ease-in-out 5s infinite;
+          animation: tide ease-in-out 5s infinite;
+}
+
+.boat {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  top: -22px;
+  width: 20px;
+}
+.boat:before {
+  content: "\0020";
+  background-color: transparent;
+  background-image: asset_url('boat.gif');
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 25px;
+  width: 28px;
+}

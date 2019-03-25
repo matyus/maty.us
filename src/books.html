@@ -1,0 +1,14 @@
+---
+layout: default
+title: Books
+category: books
+---
+
+<h1>Books</h1>
+
+<nav class="nav-stacked">
+  {% for book in site.books %}
+    <a href="{{ book.url }}">{{ book.title }}</a>
+  {% endfor %}
+</nav>
+

@@ -1,0 +1,16 @@
+source: src/
+destination: build/
+title: Michael Matyus
+description: 🐢
+keywords:  michael matyus
+permalink: pretty
+collections:
+  books:
+    output: true
+    permalink: /books/:title/
+feed:
+  collections:
+    - books
+plugins:
+  - jekyll-gzip
+  - jekyll-assets
